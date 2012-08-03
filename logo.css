@@ -164,6 +164,7 @@
 .logocenter{
     position: absolute;
     top:-47px;
+	left:-8px;
 }
 .rectangle {
     width: 22px;
