@@ -348,4 +348,4 @@
 
 .icon .schoolname{position: absolute;display: block; width: 240px;top:306px;left:94px;}
 .icon .schoolname .namebg{height:46px;background:#b11f24}
-.icon .schoolname img{display: block; width: 240px;margin-top:-46px;}
+.icon .schoolname img{display: block; width: 240px;height:46px;margin-top:-46px;}
