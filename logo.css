@@ -4,6 +4,7 @@
     position: relative;
     left:43%;
     margin-top: 20px;
+	width:400px
 }
 .colorselect #picker{
     padding-left:20px;
