@@ -4,6 +4,7 @@
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <title>GuangDong University of Technology</title>
     <link rel="stylesheet" type="text/css" href="logo.css">
+    <link rel="stylesheet" type="text/css" href="farbtastic.css">
 </head>
 <body>
     <div class="icon">
@@ -143,7 +144,38 @@
                 <h1 id="t31">Y</h1>
             </div>
         </div>
-        <img src="images/logo.png" alt="logo">
+        <div class="schoolname">
+            <div class="namebg"></div>
+            <img src="images/logo.png" alt="logo">
+        </div>
+
     </div>
+    <div class="colorselect">
+        <form action="" style="width: 400px;">
+            <div class="form-item"><label for="color">Color:</label><input type="text" id="color" name="color" value="#123456" /></div><div id="picker"></div>
+        </form>
+        <button id="surecolor">确定</button>
+        <button id="revert">重置</button>
+    </div>
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="farbtastic.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $('#picker').farbtastic('#color');
+            $('#surecolor').click(function(){
+                $(".red1, .red2, .red3, .red4, .rectangle, .round-red, .round-red2, .lineb, .halfroundred, .linered,.icon .schoolname .namebg")
+                        .css('background',$("#color").attr("value"));
+                $(".icon").css('border-color',$("#color").attr("value"));
+                $(".title").css('color',$("#color").attr("value"));
+            });
+            $('#revert').click(function(){
+                $(".red1, .red2, .red3, .red4, .rectangle, .round-red, .round-red2, .lineb, .halfroundred, .linered,.icon .schoolname .namebg")
+                        .css('background','#b11f24');
+                $(".icon").css('border-color','#b11f24');
+                $(".title").css('color','#b11f24');
+            });
+
+        });
+    </script>
 </body>
 </html>
